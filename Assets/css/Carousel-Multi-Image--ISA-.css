@@ -1,0 +1,60 @@
+* {
+  font-family: 'Roboto';
+  margin: 0;
+  padding: 0;
+}
+
+.blog-slider__img.MyStyles {
+}
+
+@media screen and (max-width: 768px) {
+  .MyNavbar {
+    max-width: 150px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .MyNavbar {
+    font-size: 20px;
+  }
+}
+
+.MyNavbar {
+  font-size: 14px;
+}
+
+@media screen and (max-width:576px) {
+  .MyHeading {
+    margin: auto;
+  }
+}
+
+.MyHeading {
+  margin-right: 25%;
+  margin-bottom: 0.2%;
+}
+
+.SpecialButton {
+  max-width: 2%;
+}
+
+.MyCustomContainer {
+  margin-top: 15%;
+}
+
+.center-object {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  bottom: 50%;
+  transform: translateY(-50%);
+}
+
+.center-object {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+

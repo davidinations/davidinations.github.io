@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>ERP Davidinations</title>
+    <title>Skripsi</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/Carousel-Multi-Image--ISA-.css?h=1da2dd028f4344ba4d775d2cf22e86ef">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/css/theme.bootstrap_4.min.css">
@@ -24,20 +24,44 @@
 </head>
 
 <body>
-    <footer class="text-white bg-dark"></footer>
-    <div class="container py-4 py-xl-5">
-        <div class="row gy-4 gy-md-0">
-            <div class="col-md-6 col-xxl-4">
-                <div class="p-xl-5 m-xl-5"><img class="rounded img-fluid w-100 fit-cover" style="min-height: 300px;" src="/assets/img/businesspeople-meeting-plan-analysis-graph-company-finance-strat_74952-1347.webp?h=238b49ca068b36ede22ca8dd6c826a2b" width="456" height="300"></div>
+    <nav class="navbar navbar-dark navbar-expand-md bg-dark py-3">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="/dashboard.html"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bezier">
+                        <path fill-rule="evenodd" d="M0 10.5A1.5 1.5 0 0 1 1.5 9h1A1.5 1.5 0 0 1 4 10.5v1A1.5 1.5 0 0 1 2.5 13h-1A1.5 1.5 0 0 1 0 11.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm10.5.5A1.5 1.5 0 0 1 13.5 9h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM6 4.5A1.5 1.5 0 0 1 7.5 3h1A1.5 1.5 0 0 1 10 4.5v1A1.5 1.5 0 0 1 8.5 7h-1A1.5 1.5 0 0 1 6 5.5v-1zM7.5 4a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"></path>
+                        <path d="M6 4.5H1.866a1 1 0 1 0 0 1h2.668A6.517 6.517 0 0 0 1.814 9H2.5c.123 0 .244.015.358.043a5.517 5.517 0 0 1 3.185-3.185A1.503 1.503 0 0 1 6 5.5v-1zm3.957 1.358A1.5 1.5 0 0 0 10 5.5v-1h4.134a1 1 0 1 1 0 1h-2.668a6.517 6.517 0 0 1 2.72 3.5H13.5c-.123 0-.243.015-.358.043a5.517 5.517 0 0 0-3.185-3.185z"></path>
+                    </svg></span><span class="MyNavbar">Dashboard</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-5"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-5">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/hrm.html">HRM</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/order_management.html">PO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/employee.html">BOM</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/inventory.html">Inventory</a></li>
+                </ul><a class="btn btn-primary ms-md-2" role="button" href="/index.html">Logout</a>
             </div>
-            <div class="col-md-6 col-lg-6 d-md-flex align-items-md-center">
-                <div style="max-width: 350px;">
-                    <h2 class="text-uppercase fw-bold" style="padding-right: 0px;padding-bottom: 0px;padding-top: 0px;"><em>ERP APPLICATION</em></h2>
-                    <p class="my-3" style="padding-right: 0px;">If you want to use this services please registry your account or login if you have already.</p><a class="btn btn-primary btn-lg me-2" role="button" href="/register.html">Sign Up</a><a class="btn btn-outline-primary btn-lg" role="button" href="/login.html">Login</a>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="card" id="TableSorterCard" style="margin-top: 1%;margin-bottom: 1%;">
+            <div class="blog-slider" style="margin-top: 2%;margin-bottom: 2%;margin-left: 5%:margin-right:5%;">
+                <div class="blog-slider__wrp swiper-wrapper">
+                    <div class="blog-slider__item swiper-slide">
+                        <div></div>
+                        <div class="blog-slider__img"><img src="/assets/img/blog-2.jpg?h=f4adb50f614f4980d42244982cd02732"></div>
+                        <div class="blog-slider__content"><span class="blog-slider__code">Date Events</span><div class="blog-slider__title">Holiday Name</div><div class="blog-slider__text">Description Of Holiday Name </div><a class="class=&quot;blog-slider__button" href="#">Click Here For More Holiday List For $Year</a></div>
+                    </div>
+                    <div class="blog-slider__item swiper-slide">
+                        <div></div>
+                        <div class="blog-slider__img"><img src="/assets/img/blog-3.jpg?h=ccc528a6026bace4ba7b6c523dfca190"></div>
+                        <div class="blog-slider__content"><span class="blog-slider__code">Last Date Form Given</span><div class="blog-slider__title">Form Template</div><div class="blog-slider__text">Form Template For Employee Start From Resignation, Request Time Off, etc</div><a class="class=&quot;blog-slider__button" href="#">Click Here For More Template List</a></div>
+                    </div>
+                    <div class="blog-slider__pagination"></div>
                 </div>
             </div>
         </div>
     </div>
+    <div></div>
     <footer class="text-white bg-dark">
         <div class="container py-4 py-lg-5">
             <div class="row justify-content-center">
@@ -77,7 +101,6 @@
             </div>
         </div>
     </footer>
-    <footer class="text-center"></footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/js/Carousel-Multi-Image--ISA-.js?h=8b6a61c52462cb43846bf671a4118b63"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/jquery.tablesorter.js"></script>
