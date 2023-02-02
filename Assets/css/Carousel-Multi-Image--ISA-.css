@@ -4,57 +4,33 @@
   padding: 0;
 }
 
-.blog-slider__img.MyStyles {
+@media (min-width: 576px) {
+  .MyNavbar {
+    font-size: 17px;
+  }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 500px) {
   .MyNavbar {
     max-width: 150px;
-    font-size: 20px;
+    font-size: 14px;
   }
 }
 
-@media screen and (min-width: 992px) {
-  .MyNavbar {
-    font-size: 20px;
-  }
+.customlogin {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 60px;
+  padding-left: 68px;
 }
 
-.MyNavbar {
-  font-size: 14px;
+.divindex {
+  max-width: 350px;
 }
 
-@media screen and (max-width:576px) {
-  .MyHeading {
-    margin: auto;
-  }
-}
-
-.MyHeading {
-  margin-right: 25%;
-  margin-bottom: 0.2%;
-}
-
-.SpecialButton {
-  max-width: 2%;
-}
-
-.MyCustomContainer {
-  margin-top: 15%;
-}
-
-.center-object {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  bottom: 50%;
-  transform: translateY(-50%);
-}
-
-.center-object {
-  position: absolute;
-  left: 0;
-  right: 0;
+.paddingindex {
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
 }
 
