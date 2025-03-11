@@ -7,13 +7,15 @@
     <title>TEST TEST</title>
     <style>
     </style>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
+    <div id="data-container"></div>
+    <div class="g-recaptcha" data-sitekey="6Lfc3PAqAAAAADtJJesHFjei43bgSYt3SCfXPt--"></div>
     <script type="module">
         // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
+        import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-firestore.js";
       
         // Your web app's Firebase configuration
         const firebaseConfig = {
@@ -27,6 +29,22 @@
       
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
-      </script>
+        const db = getFirestore(app);
+
+        // Function to read data from Firestore
+        async function readData() {
+            const querySnapshot = await getDocs(collection(db, "your-collection-name"));
+            const dataContainer = document.getElementById("data-container");
+            querySnapshot.forEach((doc) => {
+                const data = doc.data();
+                const div = document.createElement("div");
+                div.textContent = JSON.stringify(data);
+                dataContainer.appendChild(div);
+            });
+        }
+
+        // Call the function to read data
+        readData();
+    </script>
 </body>
 </html>
