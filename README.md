@@ -1,37 +1,29 @@
-## Welcome to GitHub Pages
+# Portofolio Data Analytics (GitHub Pages)
 
-You can use the [editor on GitHub](https://github.com/davidinations/davidinations.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+Repo ini berisi situs portofolio statis yang di-hosting melalui GitHub Pages. Fokus utamanya adalah menunjukkan kemampuan data analytics lewat dashboard Power BI yang saya buat dari pengalaman kerja sebelumnya.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Isi repo
 
-### Markdown
+- `index.md` — halaman utama yang dirender oleh Jekyll (Ruby/Markdown) dan berisi dua screenshot dashboard Power BI.
+- `_config.yml` — konfigurasi tema GitHub Pages.
+- `Screenshot Dashboard Monitoring Line Production Machine.png` — dashboard monitoring mesin dan lini produksi.
+- `Screenshot Overall Production.png` — dashboard ringkasan produksi keseluruhan.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Dashboard yang ditampilkan
 
-```markdown
-Syntax highlighted code block
+1. Monitoring Line Production Machine
+2. Overall Production
 
-# Header 1
-## Header 2
-### Header 3
+## Menjalankan secara lokal
 
-- Bulleted
-- List
+Pastikan Ruby dan Jekyll sudah terpasang, lalu jalankan:
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```bash
+bundle exec jekyll serve
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+Buka `http://localhost:4000` di browser.
 
-### Jekyll Themes
+## Deploy
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/davidinations/davidinations.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Setiap push ke branch `main` akan otomatis di-build dan dipublikasikan oleh GitHub Pages.
